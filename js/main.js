@@ -5,9 +5,17 @@ function loadModalComponent() {
   document.dispatchEvent(event);
 }
 
+const buttons = document.querySelectorAll('.loadmodalcomponent');
+
+buttons.forEach(element => {
+  element.addEventListener('click', loadModalComponent);
+});
+
+/*
 document
   .querySelector('.loadmodalcomponent')
   .addEventListener('click', loadModalComponent);
+  */
 
 function rollBack() {
   //alert('capture');
