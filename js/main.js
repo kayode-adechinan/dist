@@ -14,6 +14,8 @@ function rollBack() {
 
   document.querySelector('.page-wrapper').style.removeProperty('z-index');
   document.querySelector('#app').style.display = 'none';
+  const event = new Event('loadModalComponent');
+  document.dispatchEvent(event);
 }
 
 document.querySelector('.modal-overlay').addEventListener('click', rollBack);
