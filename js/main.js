@@ -6,7 +6,7 @@ function loadModalComponent() {
 }
 
 document
-  .querySelector('.loadModalComponent')
+  .querySelector('.loadmodalcomponent')
   .addEventListener('click', loadModalComponent);
 
 function rollBack() {
