@@ -13,6 +13,7 @@ function rollBack() {
   //alert('capture');
 
   document.querySelector('.page-wrapper').style.removeProperty('z-index');
+  document.querySelector('#app').style.display = 'none';
 }
 
 document.querySelector('.modal-overlay').addEventListener('click', rollBack);
