@@ -11,8 +11,8 @@ document
 
 function rollBack() {
   //alert('capture');
-  //document.querySelector('.page-wrapper').style.removeProperty('zIndex');
-  document.querySelector('.page-wrapper').style.zIndex = '9999999999';
+
+  document.querySelector('.page-wrapper').style.removeProperty('z-index');
 }
 
 document.querySelector('.modal-overlay').addEventListener('click', rollBack);
