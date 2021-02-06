@@ -8,3 +8,9 @@ function loadModalComponent() {
 document
   .querySelector('#loadModalComponent')
   .addEventListener('click', loadModalComponent);
+
+function rollBack() {
+  document.querySelector('.page-wrapper').style.removeProperty('zIndex');
+}
+
+document.querySelector('.modal-overlay').addEventListener('click', rollBack);
