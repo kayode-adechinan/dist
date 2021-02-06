@@ -1,5 +1,7 @@
 
 function loadModalComponent(){
+
+    document.querySelector('#app').style.display = 'flex';
     const event = new Event('loadModalComponent');
     document.dispatchEvent(event);
 }
