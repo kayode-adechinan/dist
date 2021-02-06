@@ -10,8 +10,9 @@ document
   .addEventListener('click', loadModalComponent);
 
 function rollBack() {
-  alert('capture');
+  //alert('capture');
   //document.querySelector('.page-wrapper').style.removeProperty('zIndex');
+  document.querySelector('.page-wrapper').style.zIndex = 'none';
 }
 
 document.querySelector('.modal-overlay').addEventListener('click', rollBack);
